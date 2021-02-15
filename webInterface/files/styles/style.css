@@ -1,0 +1,119 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-image: url(../media/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+* {
+    transition: 0.5s;
+}
+
+div.title-container {
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 100px 30px black;
+}
+
+.title-container .title-content {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title-container .title-content .logo {
+    height: 50%;
+    width: 50%;
+}
+
+.title-container .title-content h1 {
+    color: white;
+    font-size: 48pt;
+}
+
+button {
+    border-radius: 5px;
+    background: #e4e4e4;
+    border: 1px solid black;
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    padding: 10px;
+    margin: 5px;
+    min-width: 100px;
+    font-size: large;
+}
+
+button.create {
+    background-color: #036DA0;
+    color: white;
+}
+
+button.login {
+    background-color: #ececec;
+    color: black;
+}
+
+button:hover {
+    background-color: rgba(0, 195, 255, 0.5);
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.post {
+    min-height: 40%;
+    display: flex;
+    background-color: white;
+    text-align: center;
+}
+
+.post:nth-of-type(odd) {
+    background-color: transparent;
+    box-shadow: inset 0px 0px 100px 30px black;
+    color: white;
+}
+
+.post:nth-of-type(odd) .content {
+    text-shadow: 4px 4px rgba(0, 0, 0, .5);
+}
+
+.post .content {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    align-self: center;
+    position: relative;
+}
+
+.post .full-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    align-self: center;
+    position: relative;
+}
+
+.post .content img {
+    max-height: 400px;
+}
+
+.post .content:first-child {
+    float: left;
+}
+
+.post .content:last-child {
+    float: right;
+}
